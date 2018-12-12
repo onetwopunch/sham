@@ -11,8 +11,8 @@ go get github.com/onetwopunch/sham
 ## Usage
 
 ```
-$ ./sham --help
-Usage of ./sham:
+$ sham --help
+Usage of sham:
   -combine string
     	The shards to combine to get the secret separated by commas
   -k int
@@ -35,6 +35,6 @@ SGPS5nQMmNeg-Nnb
 
 ### Combining a secret key
 ```
-$ ./sham --combine hvXh_5lEQ7-4f79f,Ee0n0a6bGBu7UesJ,N4WJV4j11Ys9WuVE
+$ sham --combine hvXh_5lEQ7-4f79f,Ee0n0a6bGBu7UesJ,N4WJV4j11Ys9WuVE
 supersecret
 ```
