@@ -59,8 +59,9 @@ func main() {
       shardBytes[i] = []byte(decodedShard)
     }
 
-    decodedSecret, err := shamir.Combine(shardBytes)
+    decodedSecretBytes, err := shamir.Combine(shardBytes)
     handleError(err)
+    decodedSecret := string(decodedSecretBytes)
     fmt.Println(decodedSecret)
   }
 }
